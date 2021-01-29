@@ -1,0 +1,601 @@
+*{margin: 0;
+padding: 0;}
+@font-face{
+	src: url("../font/ShopeeDisplay-Bold.ttf"), url("../font/ShopeeDisplay-BlackItalic.ttf"),url("../font/ShopeeDisplay-BoldItalic.ttf"),url("../font/ShopeeDisplay-ExtraBold.ttf"),url("../font/ShopeeDisplay-Italic.ttf"),url("../font/ShopeeDisplay-LightItalic.ttf"),url("../font/ShopeeDisplay-Medium.ttf"),url("../font/ShopeeDisplay-MediumItalic.ttf");
+	font-family: ShoppeeDisplay;
+}
+@font-face{
+	src: url("../font/ShopeeDisplay-Black.ttf");
+	font-family: ShoppeeDisplayblack;}
+@font-face{
+	src: url("../font/ShopeeDisplay-Regular.ttf");
+	font-family: ShoppeeDisplayregular;
+}	
+@font-face{src:  url("../font/ShopeeDisplay-Light.ttf");
+	font-family: ShoppeeDisplaylight;}
+html {font-size: 12px;
+scroll-behavior: smooth;}
+.box-center{
+	width: 90%;
+	margin: auto;
+}
+.headerstyle{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.logo{
+	width: 5rem;
+	height: 100%;
+	float: left;
+	padding: 1rem 1rem 1rem 3rem;
+	z-index: 10
+}
+.menu{
+	width: 50rem;
+	height: 30rem;
+    float: right;
+}
+.menu ul {
+	list-style-type: none;
+}
+.menu ul li{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.75rem;
+	margin: 2rem 1.5rem 0 2.5rem;
+	font-family: ShoppeeDisplay;
+	color: aliceblue;
+}
+.menu a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.75rem;
+	font-family: ShoppeeDisplay;
+	color: aliceblue;
+	transition: 1s;
+}
+.menu a:hover{
+	color: bisque;
+	transform: scale(1.5);
+}
+.mp{
+	width: 20rem;
+	height: 100%rem;
+	margin: 0rem 0rem 0 14rem;
+	animation: mp 3s;
+	position: relative;
+}
+.mp p{
+	font-family: ShoppeeDisplayblack;
+	font-size: 8rem;
+	text-align: left;
+	padding: 5rem 0 0rem 2rem;
+	color: aliceblue;
+}
+@keyframes mp {
+  100% {
+    opacity: 100%;
+    right: 0;
+    top: 0;
+  }
+  0% {
+    opacity: 0%;
+    right: 500px;
+    top: 0;
+  }
+}
+.headerstyle video{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+}
+.myp {
+	width: 17rem;
+	height: 3.5rem;
+	border: solid #0BEBE1 1.5px;
+	position: absolute;
+	right: 8rem;
+	top: 53rem;
+	border-bottom-left-radius: 5rem;
+	border-top-right-radius: 5rem;
+	background-color: #111111;
+	
+}
+.myp a{
+	color: aliceblue;
+	font-family: ShoppeeDisplay;
+	font-size: 1.75rem;
+	text-decoration: none;
+}
+.fixed{
+	width: 100vw;
+	height: 10vh;
+	position: fixed;
+}
+.mxh{
+	position: fixed;
+	background-color: #0BEBE1;
+	width: 4rem;
+	height: 14rem;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	float: left;
+	top: 20rem;
+	z-index: 10;
+}
+.fb{
+	width: 40px;
+	height: 40px;
+	margin: 12px 4px;
+	transition: 2s;
+}
+.ins{
+	width: 40px;
+	height: 40px;
+	margin: 12px 2px;
+	transition: 2s;
+}
+.mess{
+	width: 40px;
+	height: 40px;
+	margin: 12px 2px;
+	transition: 2s;
+}
+.fb:hover{
+	transform: scale(1.2);
+}
+.ins:hover{
+	transform: scale(1.2);
+}
+.mess:hover{
+	transform: scale(1.2);
+}
+.myp:hover{
+	animation: ava 1s infinite;
+	background-color: #0CEADE;
+}
+.aboutme{
+	width: 100%;
+	height: 100vh;
+	background-color: #111111;
+	margin: 28.48rem 0 0 0;
+	z-index: 1;
+	position: relative;
+}
+.stroke{
+	width: 100%;
+	height: 30%;
+	background-color: #111111;
+	padding-top: 5rem;
+}
+.text{
+	width:45%;
+	height: 30rem;
+	background: #111111;
+	margin: 3rem 5rem;
+	float:left; 
+}
+.text p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	text-align: justify;
+	line-height: 3.3rem;
+	color: aliceblue;
+}
+.ava {
+	width: 40%;
+	height: 32rem;
+	float: left;
+	margin: 3rem 2rem 5rem 5rem;
+	animation: ava 2s infinite;
+}
+@keyframes ava {
+	0%{transform: rotate(5deg);}
+	50%{transform: rotate(-5deg);}
+	100%{transform: rotate(5deg);}
+}
+.menufixed{
+	background-color: aqua;
+	z-index: 1000;
+	opacity: 80%;
+}
+.ct {
+	width: 17rem;
+	height: 3.5rem;
+	border: solid #0BEBE1 1.5px;
+	border-bottom-left-radius: 5rem;
+	border-top-right-radius: 5rem;
+	background-color: #111111;
+    position: absolute;
+	top: 55rem;
+	left: 48rem;
+}
+.ct a{
+	color: aliceblue;
+	font-family: ShoppeeDisplay;
+	font-size: 1.75rem;
+	text-decoration: none;
+	
+}
+.ct:hover{
+	animation: ava 1s infinite;
+	background-color: #0CEADE;
+}
+.work {
+	width: 100%;
+	height: 100%;
+	background-color: #111111;
+}
+.textopr {
+	width: 100%;
+	height: 100vh;
+	background-color: #111111
+}
+.textopr p{
+	font-family: ShoppeeDisplayblack;
+	-webkit-text-stroke: 2px white;
+    -text-stroke: 2px black;
+	-webkit-text-fill-color: rgba(0,0,0,0.0);
+	font-size: 17rem;
+}
+@keyframes op {
+	0% {transform: scale(1.5);
+		color: aqua;
+	}
+	100% { color: aliceblue;}
+}
+.textopr p:hover {
+	animation: op 2s;
+}
+.opr{
+	width: 100%;
+	height: 151vh;
+	background-color: #111111;
+	margin: 3rem 0 0 0;
+	position: relative;
+}
+.kn {
+	background-color: antiquewhite;
+	width: 35rem;
+	height: 40rem;
+	position: absolute;
+	top: 1rem;
+	left: 5rem;
+}
+.mk{
+	width: 30rem;
+	height: 30rem;
+	background-color: antiquewhite;
+	margin-top: 1rem;
+	position: absolute;
+	right: 5rem;
+    bottom: 3rem;}
+.cn {
+	width: 20rem;
+	height: 25rem;
+	background-color: antiquewhite;
+	position: absolute;
+	right: 5rem;
+	top: 1rem;
+}
+.td{
+	width: 35rem;
+	height: 40rem;
+	background-color: antiquewhite;
+	position: absolute;
+	right: 45rem;
+	bottom: 3rem;
+}
+.pa{
+	width: 20rem;
+	height: 20rem;
+	background-color: antiquewhite;
+	position: absolute;
+	right: 5rem;
+	top: 31rem;
+}
+.sc{
+	width: 35rem;
+	height: 40rem;
+	background-color: antiquewhite;
+	position: absolute;
+	top: 45rem;
+	left: 5rem;
+}
+.mg{
+	width: 50rem;
+	height: 40rem;
+	background-color: aquamarine;
+	position: absolute;
+	left: 45rem;
+	top: 1rem;
+}
+.kn1 {
+	width: 35rem;
+	height: 40rem;
+	position: absolute;
+	top: 1rem;
+	left: 5rem;
+}
+.kn1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 18rem 6rem;
+	transition: 1s;
+}
+.kn1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.kn1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.mk1{
+	width: 30rem;
+	height: 30rem;
+	margin-top: 1rem;
+	position: absolute;
+	right: 5rem;
+    bottom: 3rem;}
+.mk1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 13rem 6rem;
+	transition: 1s;
+}
+.mk1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.mk1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.cn1 {
+	width: 20rem;
+	height: 25rem;
+	position: absolute;
+	right: 5rem;
+	top: 1rem;
+}
+.cn1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 10rem 6rem;
+	transition: 1s;
+}
+.cn1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.cn1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.td1{
+	width: 35rem;
+	height: 40rem;
+	position: absolute;
+	right: 45rem;
+	bottom: 3rem;
+}
+.td1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 20rem 6rem;
+	transition: 1s;
+}
+.td1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.td1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.pa1{
+	width: 20rem;
+	height: 20rem;
+	position: absolute;
+	right: 5rem;
+	top: 31rem;
+}
+.pa1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 6rem 6rem;
+	transition: 1s;
+}
+.pa1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.pa1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.sc1{
+	width: 35rem;
+	height: 40rem;
+	position: absolute;
+	top: 45rem;
+	left: 5rem;
+}
+.sc1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 17rem 13rem;
+	transition: 1s;
+}
+.sc1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.sc1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.mg1{
+	width: 50rem;
+	height: 40rem;
+	position: absolute;
+	left: 45rem;
+	top: 1rem;
+	transition: 1s;
+}
+.mg1 p{
+	font-family: ShoppeeDisplayregular;
+	font-size: 3rem;
+	z-index: 10;
+	text-align: center;
+	margin: 18rem 15rem;
+	transition: 1s;
+}
+.mg1:hover{
+	opacity: 60%;
+	background-color: dimgray;
+}
+.mg1:hover{
+	opacity: 60%;
+	color: aliceblue;
+}
+.service {
+	width: 100%;
+	height: 100vh;
+	margin: 0rem;
+	background-color: #111111;
+}
+.servicehv{
+		font-family: ShoppeeDisplayblack;
+	-webkit-text-stroke: 2px white;
+    -text-stroke: 2px black;
+	-webkit-text-fill-color: rgba(0,0,0,0.0);
+	font-size: 17rem;
+	line-height: 10rem;
+	transition: 4s;
+}
+.servicehv:hover{
+	transform: translate(20rem);
+	-webkit-text-stroke: 2px aqua;
+    -text-stroke: 2px aqua;
+	-webkit-text-fill-color: rgba(0,0,0,0.0);
+}
+.form {
+	width: 40%;
+	height: 50%;
+	margin: 4.5rem 5rem;
+	float: left;
+}
+input[type=text] {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border: none;
+	border-bottom: 2px solid #FFFFFF;}
+input[type=text]:focus{
+	background-color: aqua;
+	opacity: 50%;
+}
+label{
+	 font-size: 16px;
+  resize: none;
+  font-family: ShoppeeDisplaylight;
+	color: aliceblue;
+	
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #FFFFFF;
+  border: none;
+  font-size: 16px;
+  resize: none;
+  font-family: ShoppeeDisplaylight;
+  margin: 1rem 0;
+}
+textarea:focus{
+	background-color: aqua;
+	opacity: 50%;
+	font-family: ShoppeeDisplaylight;
+	color: #000000;
+}
+input[type=Send]{
+	background-color: #08CEB6;
+	border-radius: 8px solid #08CEB6;
+	width: 5rem;
+	height: 1rem;
+    text-decoration: none;
+	padding: 1.5rem;
+    cursor: pointer;
+	font-family: ShoppeeDisplayregular;
+	font-size: 1.8rem;
+	margin: 1rem 42.3rem;
+	transition: 1.5s;
+}
+input[type=Send]:hover{
+	background-color: bisque;
+	border-radius: 30%;
+}
+.footer{
+	width: 100%;
+	height: 7vh;
+	background-color: #08CEB6;
+	float: none;
+	margin: 62vh 0 0 0;
+}
+
+.f2020 {
+	text-align:left;
+	color: #111111;
+	font-size: 1.5rem;
+	font-family: ShoppeeDisplaylight;
+	padding-top: 1.3rem;
+}
+.contact{
+	width: 50%;
+	height: 20rem;;
+	float: left;
+margin: 7rem 0 0 0;
+}
+.hav{
+	color: #08CEB6;
+	font-family: ShoppeeDisplayregular;
+	font-size: 2rem;
+}
+.im{
+	color: #08CEB6;
+	font-family: ShoppeeDisplayBlack;
+	font-size: 6rem;
+}
+.top{
+	position: fixed;
+	float: left;
+	top: 88vh;
+	right: 5vh;
+	z-index: 10000;
+	background: none;
+    border: none;
+
+}
+

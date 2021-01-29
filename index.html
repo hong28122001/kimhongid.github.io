@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MK Studio</title>
+	<link rel="stylesheet" href="Css/Style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $(".fixed").addClass("menufixed");
+                } else {
+                    $(".fixed").removeClass("menufixed");
+                }
+            });
+        });
+//Get the button
+var mybutton = document.getElementById("myBtn");
+var fixed = document.getElementById("#fixed");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 ) {
+	 
+    mybutton.style.display = "none";
+  } else {
+    mybutton.style.display = "block";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+</head>
+
+<body>
+<header class="headerstyle" id="section0">
+<!--	<video src="image/Hero_Video.mp4" autoplay></video>-->
+	<video autoplay muted src="image/Hero_Video.mp4"></video>
+		<div class="fixed" id=""><div class="logo">
+		<a href="#section0"><img src="image/logo.png" alt="logo"></a>
+		</div>
+		<div class="menu">
+		<button class="top" id="myBtn" onClick="topFunction()"> 
+	 <a href="#section0"><img src="image/logo.png" alt=""></a></button>
+		<ul>
+		<li><a href="#section1">about me</a></li>
+		<li> <a href="#section2">work</a></li>
+		<li><a href="#section3">service</a></li>
+		<li><a href="#section3">contact</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="mp">
+		<p> my <br>port-folio </p>
+		</div>
+
+		<div class="mxh"> 
+			<div class="fb"><a  href="https://www.facebook.com/phuonghong2405"><img src="image/fb.png" alt=""></a></div>
+			<div class="ins"><a class="ins" href="https://www.instagram.com/mackhang_/"> <img src="image/ins.png" alt=""></a></div>
+			<div class="mess"><a class="mess" href="https://www.facebook.com/phuonghong2405/"> <img src="image/mess.png" alt=""></a></div>
+	</div>
+	 <button class="myp"><a href="#section2">my project</a> </button>
+	</header>
+	<div class="aboutme" id="section1">
+		<div class="stroke"> <img src="image/abt.png" alt="aboutme"></div>
+		<div class="text"> <p>Tôi là Kim Hồng - một Designer đang theo học tại Arena Multimedia. Tôi vẫn đang trong quá trình học hỏi và hoàn thiện bản thân. Đối với tôi, sự hấp dẫn luôn đến từ những điều đơn giản nhất. Và đó là cơ sở để tôi định hướng phong cách cho bản thân. Nếu bạn yêu thích sự đơn giản và trẻ trung thì hãy liên hệ với tôi nhé!</p> </div>
+		<button class="ct"><a href="#section3">contact me </a></button>
+		<div class="ava">
+		<img src="image/Untitled-3.png" alt="ava"></div>
+	</div>
+	<div class="work" id="section2">
+		<div class="textopr">
+			<p> my project >> </p>
+			<p> my project >> </p>
+			<p> my project >> </p>
+			</div>
+		<div class="opr">
+		<div class="kn"> <img src="image/mejiwoo shop image 2.jpg.png" alt="kn"></div>
+		<div class="mk"> <img src="image/MK Studio.jpg.png" alt="mk"></div>
+		<div class="cn"> <img src="image/Poster Canon.jpg.png" alt="cn"></div>
+		<div class="td"> <img src="image/Snake Rose .jpg.png" alt="td"></div>
+		<div class="pa"><img src="image/Logo PA Spa JPEG-01.jpg.png" alt="pa"></div>
+		<div class="sc"> <img src="image/Sketch logo.SVG).jpg.png" alt="sc"></div>
+		<div class="mg"> <img src="image/13.png" alt="mg"></div>
+		<div class="kn1"><p>Kiss Newyork</p> </div>
+		<div class="mk1"> <p>MK Studio</p></div>
+		<div class="cn1"><p>Canon</p> </div>
+		<div class="td1"><p>T-shirt Design</p></div>
+		<div class="pa1"><p>PA Clinic</p></div>
+		<div class="sc1"><p>Sucre Brand</p></div>
+		<div class="mg1"><p>My Self<br>Magazine</p> </div>
+			</div>
+	</div>
+	<div class="service" id="section3"> 
+	<p class="servicehv">service - contact us</p>
+			<form>
+		<div class="form">
+  <label for="fname">Your Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Phone Number</label>
+  <input type="text" id="lname" name="lname">
+  <textarea>How can I help you?</textarea>			
+			</form>
+  <input type="Send" value="Send">					
+		</div>
+		<div class="contact"><p class="hav">Have a project in mind?</p>
+			<p class="im">I'm Ecited to hear all about your brand!</p>
+		</div>
+<div class="footer">
+		<p class="f2020">@2020 MK Studio</p></div>
+</div>
+
+	
+
